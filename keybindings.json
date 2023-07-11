@@ -1,0 +1,118 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.nextEditor"
+    },
+    {
+        "key": "ctrl+shift+tab",
+        "command": "workbench.action.previousEditor"
+    },
+
+    {
+        "key": "ctrl+up",
+        "command": "-notebook.cell.focusOutOutput",
+        "when": "notebookEditorFocused"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "-notebook.cell.focusInOutput",
+        "when": "notebookCellHasOutputs && notebookEditorFocused"
+    },
+    {
+        "key": "ctrl+alt+pagedown",
+        "command": "gotoNextPreviousMember.nextMember"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "-gotoNextPreviousMember.nextMember"
+    },
+    {
+        "key": "ctrl+alt+pageup",
+        "command": "gotoNextPreviousMember.previousMember"
+    },
+    {
+        "key": "ctrl+up",
+        "command": "-gotoNextPreviousMember.previousMember"
+    },
+
+
+    // {
+    //     "key": "ctrl+down",
+    //     "command": "editorScroll",
+    //     "args": {
+    //       "to": "down",
+    //       "by": "line",
+    //       "value": 10,
+    //       "revealCursor": false
+    //     },
+    //     "when": "editorTextFocus"
+    //   },
+    //   {
+    //     "key": "ctrl+up",
+    //     "command": "editorScroll",
+    //     "args": {
+    //       "to": "up",
+    //       "by": "line",
+    //       "value": 10,
+    //       "revealCursor": false
+    //     },
+    //     "when": "editorTextFocus"
+    //   }
+      
+
+
+
+
+
+    // {
+    //     "key": "alt+m",           // or whatever binding you choose
+    //     "command": "cursorMove",
+    //     "args": {
+    //         "to": "viewPortCenter"
+    //     }
+    //   }
+    {
+        "key": "ctrl+pagedown",
+        "command": "cursorMove",
+        "when": "editorTextFocus", 
+        "args": {
+            "to": "nextBlankLine",
+            "by": "wrappedLine"
+        }
+    },
+    {
+        "key": "ctrl+pageup",
+        "command": "cursorMove",
+        "when": "editorTextFocus", 
+        "args": {
+            "to": "prevBlankLine",
+            "by": "wrappedLine"
+        }
+    },
+    {
+        "key": "ctrl+shift+pagedown",
+        "command": "cursorMove",
+        "when": "editorTextFocus",
+        "args": {
+            "to": "nextBlankLine",
+            "by": "wrappedLine",
+            "select": true
+        }
+    },
+    {
+        "key": "ctrl+shift+pageup",
+        "command": "cursorMove",
+        "when": "editorTextFocus",
+        "args": {
+            "to": "prevBlankLine",
+            "by": "wrappedLine",
+            "select": true
+        }
+    },
+    {
+        "key": "ctrl+alt+0",
+        "command": "jupyter.restartkernel"
+    },
+
+]

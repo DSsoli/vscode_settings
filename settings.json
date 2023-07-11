@@ -1,0 +1,21 @@
+{
+    "notebook.lineNumbers": "on",
+    "editor.accessibilitySupport": "off",
+    "jupyter.widgetScriptSources": [
+        "jsdelivr.com",
+        "unpkg.com"
+    ],
+    "[python]": {
+        "editor.formatOnType": true
+    }
+    
+    ,
+    "gotoNextPreviousMember.symbolKinds": [
+        "method"
+    ],
+    // "editor.tabSize": 2,
+    //"editor.detectIndentation": false,
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Night Owl"
+}
